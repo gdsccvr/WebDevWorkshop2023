@@ -1,0 +1,46 @@
+:host {
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: var(--slate-900);
+  padding: 0.5rem 1rem;
+}
+
+.left-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.todo,
+a {
+  /* https://unpkg.com/tailwindcss@3.2.4/src/css/preflight.css */
+  color: inherit;
+  text-decoration: inherit;
+
+  display: block;
+  padding: 0.5rem 1rem;
+
+  background-color: var(--blue-700);
+  border-radius: 0.2rem;
+}
+
+.todo:hover {
+  background-color: var(--blue-600);
+}
+
+.todo:active {
+  background-color: var(--blue-800);
+}
+
+.home {
+  background-color: initial;
+  border: 1px solid grey;
+}
+
+.home:active {
+  opacity: 0.6;
+}
